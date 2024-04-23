@@ -16,7 +16,6 @@ const botStart = () =>{
         const chatId = msg.chat.id;
 
         if (text === '/start'){
-            await bot.sendPhoto(chatId, 'assets/oranger.png' );
             return  bot.sendMessage(chatId, `Вітаю вас ${msg.from.first_name}`);
         }
 
